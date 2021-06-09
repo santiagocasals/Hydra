@@ -1,0 +1,45 @@
+# Fenix by Acru - https://www.spigotmc.org/members/acru.1247961/
+# If you liked the plugin, please give it 5 stars in the resource.
+#
+# Remember that I am offering support for any doubt, query or bug.
+# Consult through discord (https://discord.gg/kis8jsKl) or the discussion of the post.
+
+# Select the language of your preference, within these are: en, es, pt, ro.
+language: "en"
+
+# Select the mode of your preference, you can see the functionality of each mode in the resource.
+mode:
+  #The active modes at the moment are: normal, webhook, web.
+  active: "normal"
+  
+  # In case you are using webhook mode, enter its URL to establish the connection.
+  webhook: "https://discord.com/api/webhooks/ID/TOKEN"
+  
+  # In case you are using web mode, enter the web URL (also including the path where the system files are located).
+  web: "http://localhost/system/api/?key=%key%&player=%player%&password=%password%"
+  
+  #Not everyone should access the API data, so a key system was designed in which you must have the password for the JSON data to be displayed.
+  key: "key"
+
+# The encryption used here will be in charge of transforming the flat password into an indecipherable one.
+encryption:
+  # The currently available modes are: MD5, SHA256, CUSTOM.
+  active: "md5"
+    
+  #In case you have chosen CUSTOM, you must enter a password or key, this will be used to encrypt the passwords (try to keep it private since this method is not 100% effective).
+  key: "password"
+
+# You can choose between different options to have the notifications to your preference.
+notifications:
+  #If you decide not to activate the notifications, the other functionalities will not work (no notification will arrive.)
+  active: "true"
+  
+  #In the "success" section, all the notifications of the sessions that have been successful (such as registrations or logins) arrive.
+  success: "true"
+  
+  #In the "warning" section all the notifications of alerts arrive as the entry of the wrong password or from another IP address.
+  warning: "true"
+  
+  #In the "urgent" section, all the urgent notifications arrive as a ban of a user after several unsuccessful attempts or the threat of a vulnerability.
+  urgent: "true"
+

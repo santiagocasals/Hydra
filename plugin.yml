@@ -1,0 +1,8 @@
+name: Hydra
+author: Acru
+version: 1.0.0
+main: me.acru.Main
+descripcion: A based authentication system.
+commands:
+    hydra:
+        description: Hydra main command.
